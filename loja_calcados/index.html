@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Calçados</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <header class="site-header">
+        <div class="header__logo">
+            <a href="/" aria-label="Página inicial da Loja de Calçados">
+                <img src="assets/images/logo.svg" alt="Logo da Loja de Calçados" style="width: 200px; height: 48px; border: 1px solid #ccc; display: block;" title="Loja de Calçados">
+            </a>
+        </div>
+
+        <nav class="header__nav" aria-label="principal">
+            <ul>
+                <li><a href="/" class="is-active" aria-current="page">Home</a></li>
+                <li><a href="pages/masculino.html">Masculino</a></li>
+                <li><a href="pages/feminino.html">Feminino</a></li>
+                <li><a href="pages/novidades.html">Novidades</a></li>
+                <li><a href="pages/ofertas.html">Ofertas</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__utils">
+            <div class="header__search">
+                <form action="/search" method="get" role="search">
+                    <label for="search-input" class="visually-hidden">Buscar produtos</label>
+                    <input type="search" id="search-input" name="q" placeholder="Buscar...">
+                    <button type="submit" aria-label="Realizar busca">
+                        <!-- Ícone de busca -->
+                    </button>
+                </form>
+            </div>
+            <a href="pages/conta.html" class="header__account" aria-label="Acessar sua conta">
+                <!-- Ícone de conta -->
+                <span>Entrar</span>
+            </a>
+            <a href="pages/carrinho.html" class="header__cart" aria-label="Ver carrinho de compras com 0 itens">
+                <!-- Ícone de carrinho -->
+                <span>Carrinho</span>
+                <span class="cart-count" aria-hidden="true">0</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="utility-panel" role="region" aria-label="Painel de utilitários">
+        <p class="utility-panel__promo">Frete grátis para SP acima de R$ 199,90</p>
+        <div class="utility-panel__links">
+            <a href="pages/conta.html">Minha Conta</a>
+            <a href="#/selecionar-regiao" class="utility-panel__location">
+                <span>São Paulo, SP</span>
+                <!-- Ícone de localização -->
+            </a>
+            <a href="pages/carrinho.html" class="utility-panel__cart-summary">
+                <span>Carrinho: <strong>R$ 0,00</strong></span>
+            </a>
+        </div>
+    </div>
+
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__background">
+                <img src="assets/images/banner.jpg" alt="" role="presentation">
+            </div>
+            <div class="hero__content">
+                <h1 id="hero-title">Lançamentos Incríveis: O Seu Novo Par Perfeito</h1>
+                <p>Explore nossa coleção e descubra calçados com design e conforto incomparáveis.</p>
+                <a href="pages/novidades.html" class="button cta-button">Ver Novidades</a>
+            </div>
+        </section>
+
+        <section class="product-grid" aria-labelledby="produtos-title">
+            <div class="container">
+                <h2 id="produtos-title">Destaques da Semana</h2>
+                <ul class="product-grid__list">
+                    <li class="product-card">
+                        <article>
+                            <div class="product-card__image-wrapper">
+                                <a href="pages/produto.html" aria-label="Ver detalhes do produto Tênis Esportivo Runner">
+                                    <img src="assets/images/products/shoe1.jpg" alt="Um sapato esportivo cinza com detalhes em laranja." width="300" height="300" loading="lazy">
+                                </a>
+                                <div class="product-card__badge product-card__badge--new">Novo</div>
+                            </div>
+                            <div class="product-card__info">
+                                <h3 class="product-card__name"><a href="pages/produto.html">Tênis Esportivo Runner</a></h3>
+                                <p class="product-card__price">R$ 249,90</p>
+                                <a href="?add-to-cart=p1" class="button button--primary">Adicionar ao carrinho</a>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="product-card">
+                        <article>
+                            <div class="product-card__image-wrapper">
+                                <a href="pages/produto.html" aria-label="Ver detalhes do produto Sapato Social Couro">
+                                    <img src="assets/images/products/shoe2.jpg" alt="Um sapato social de couro marrom." width="300" height="300" loading="lazy">
+                                </a>
+                                 <div class="product-card__badge product-card__badge--promo">Promo</div>
+                            </div>
+                            <div class="product-card__info">
+                                <h3 class="product-card__name"><a href="pages/produto.html">Sapato Social Couro</a></h3>
+                                <p class="product-card__price"><del>R$ 399,90</del> R$ 349,90</p>
+                                <a href="?add-to-cart=p2" class="button button--primary">Adicionar ao carrinho</a>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="product-card">
+                        <article>
+                            <div class="product-card__image-wrapper">
+                                <a href="pages/produto.html" aria-label="Ver detalhes do produto Tênis Esportivo Runner">
+                                    <img src="assets/images/products/shoe1.jpg" alt="Um sapato esportivo cinza com detalhes em laranja." width="300" height="300" loading="lazy">
+                                </a>
+                            </div>
+                            <div class="product-card__info">
+                                <h3 class="product-card__name"><a href="pages/produto.html">Tênis Esportivo Runner</a></h3>
+                                <p class="product-card__price">R$ 249,90</p>
+                                <a href="?add-to-cart=p1" class="button button--primary">Adicionar ao carrinho</a>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="product-card">
+                        <article>
+                            <div class="product-card__image-wrapper">
+                                <a href="pages/produto.html" aria-label="Ver detalhes do produto Sapato Social Couro">
+                                    <img src="assets/images/products/shoe2.jpg" alt="Um sapato social de couro marrom." width="300" height="300" loading="lazy">
+                                </a>
+                            </div>
+                            <div class="product-card__info">
+                                <h3 class="product-card__name"><a href="pages/produto.html">Sapato Social Couro</a></h3>
+                                <p class="product-card__price"><del>R$ 399,90</del> R$ 349,90</p>
+                                <a href="?add-to-cart=p2" class="button button--primary">Adicionar ao carrinho</a>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer__container">
+            <div class="footer__section footer__section--nav">
+                <h3 class="footer__title">Links Úteis</h3>
+                <nav aria-label="rodapé">
+                    <ul>
+                        <li><a href="pages/sobre.html">Sobre Nós</a></li>
+                        <li><a href="pages/contato.html">Contato</a></li>
+                        <li><a href="pages/faq.html">Perguntas Frequentes</a></li>
+                        <li><a href="pages/politica.html">Política de Privacidade</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__section footer__section--social">
+                <h3 class="footer__title">Redes Sociais</h3>
+                <ul>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="footer__section footer__section--legal">
+                <p class="footer__copyright">&copy; 2025 Loja de Calçados. Todos os direitos reservados.</p>
+                <p class="footer__address">Rua Fictícia, 123, Cidade Exemplo, EX, 12345-678</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
