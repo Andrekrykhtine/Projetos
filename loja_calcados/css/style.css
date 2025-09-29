@@ -1,0 +1,25 @@
+/* --- STYLESHEET PRINCIPAL --- */
+
+/*
+  1. Reset
+  2. Variáveis
+  3. Estilos de Base (body, fontes, etc)
+  4. Layout (container, grid, etc)
+  5. Componentes
+  6. Utilitários
+*/
+
+@import url('reset.css');
+@import url('variables.css');
+@import url('base.css');
+@import url('layout.css');
+
+/* --- Componentes --- */
+@import url('components/header.css');
+@import url('components/utility-panel.css');
+@import url('components/buttons.css');
+@import url('components/hero.css');
+@import url('components/product-grid.css');
+@import url('components/footer.css');
+
+@import url('utilities.css');

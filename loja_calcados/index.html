@@ -5,50 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja de Calçados</title>
 
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/variables.css">
-    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
     <header class="site-header">
-        <div class="header__logo">
-            <a href="/" aria-label="Página inicial da Loja de Calçados">
-                <img src="assets/images/logo.svg" alt="Logo da Loja de Calçados" style="width: 200px; height: 48px; border: 1px solid #ccc; display: block;" title="Loja de Calçados">
+        <h1 class="header__logo">
+            <a href="/" title="Loja de Calçados">
+                <img src="assets/images/logo.svg" alt="Logo da Loja de Calçados" title="Loja de Calçados">
             </a>
-        </div>
+        </h1>
 
-        <nav class="header__nav" aria-label="principal">
+        <nav class="header__nav" aria-label="categorias-principais">
             <ul>
-                <li><a href="/" class="is-active" aria-current="page">Home</a></li>
                 <li><a href="pages/masculino.html">Masculino</a></li>
                 <li><a href="pages/feminino.html">Feminino</a></li>
-                <li><a href="pages/novidades.html">Novidades</a></li>
                 <li><a href="pages/ofertas.html">Ofertas</a></li>
             </ul>
         </nav>
-
-        <div class="header__utils">
-            <div class="header__search">
-                <form action="/search" method="get" role="search">
-                    <label for="search-input" class="visually-hidden">Buscar produtos</label>
-                    <input type="search" id="search-input" name="q" placeholder="Buscar...">
-                    <button type="submit" aria-label="Realizar busca">
-                        <!-- Ícone de busca -->
-                    </button>
-                </form>
-            </div>
-            <a href="pages/conta.html" class="header__account" aria-label="Acessar sua conta">
-                <!-- Ícone de conta -->
-                <span>Entrar</span>
-            </a>
-            <a href="pages/carrinho.html" class="header__cart" aria-label="Ver carrinho de compras com 0 itens">
-                <!-- Ícone de carrinho -->
-                <span>Carrinho</span>
-                <span class="cart-count" aria-hidden="true">0</span>
-            </a>
-        </div>
+            <nav class="header__menu-extra" aria-label="menu-extra">
+                <ul>
+                    <li><a href="#">Nossas lojas</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#" aria-label="Conta"><img src="assets/icons/user.svg" alt="Conta" ></a></li>
+                    <li><a href="#" aria-label="Ajuda"><img src="assets/icons/help.svg" alt="Ajuda"></a></li>
+                    <li><a href="#" aria-label="Sacola"><img src="assets/icons/bag.svg" alt="Sacola" ></a></li>
+                </ul>
+            </nav>
     </header>
 
     <div class="utility-panel" role="region" aria-label="Painel de utilitários">

@@ -1,0 +1,78 @@
+/* Estilos para o cabeçalho do site (site-header) */
+.site-header {
+    position: fixed;
+    display: flex;
+    width: 90%;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 20px 28px; /* Adiciona espaçamento nas laterais */
+    background-color: #fff; /* Fundo branco */
+    border-radius: 15px;
+    z-index: 1000;
+}
+
+/* --- Logo --- */
+.header__logo img {
+    height: 40px; /* Define uma altura para o logo */
+    width: auto;
+}
+
+/* --- Navegação Principal --- */
+.header__nav ul {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.header__nav a {
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+/* Efeito de sublinhado no hover */
+.header__nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #333;
+    transition: width 0.3s ease;
+}
+
+.header__nav a:hover::after {
+    width: 100%;
+}
+
+
+
+/* --- Menu Extra (Lojas, Sobre, Ícones) --- */
+.header__menu-extra {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu-extra ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header__menu-extra a {
+    color: #555; /* Cor um pouco mais suave que a nav principal */
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.header__menu-extra a:hover {
+    color: #000;
+}
