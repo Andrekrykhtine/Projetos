@@ -67,7 +67,7 @@
 .header__menu-extra a {
     color: #555; /* Cor um pouco mais suave que a nav principal */
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     transition: color 0.3s ease;
